@@ -1,22 +1,26 @@
 package pkg;
 
 /**
- * <h1>Person</h1>
- * <br>
+ * Outlines an object which describes a Person, to be used as a parent class for others.
+ * <p>
  * Contains instance variables of type String: name, address,phone, email.
- * <br>
- * Contains constructor which takes a name of type String, as parameter.
- * <br>
- * Contains an overridden toString() method printing the class (Person), along with name.
  */
-
 public class Person {
   String name, address, phone, email;
 
+  /**
+   * Constructor that takes a name as an argument. Only takes name because its the only variable
+   * needed to make the program work.
+   * 
+   * @param name : String
+   */
   public Person(String name) {
     this.name = name;
   }
 
+  /**
+   * Overridden method which returns the class (Person) and name as a String
+   */
   @Override
   public String toString() {
     return "Class: Person, Name: " + name;
